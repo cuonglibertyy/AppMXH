@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+    <LinearLayout
+        android:background="#DDDDDD"
+        android:orientation="vertical"
+        android:id="@+id/okok"
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/okok"
+        android:layout_marginTop="@dimen/activity_padding_horizontal"
+        android:layout_marginLeft="@dimen/activity_padding_horizontal"
+        android:src="@drawable/ic_avatar"
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/placeholder_image"
+        android:layout_height="@dimen/placeholder_image"
+        android:layout_marginRight="@dimen/padding_10"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_marginTop="26dp"
+        android:text="Nguyễn Văn Đoàn"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textColor="@color/item_name"
+        android:textSize="@dimen/name" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/thumbnail"
+        android:maxLines="1"
+        android:text="2 min ago"
+        android:textColor="@color/timestamp"
+        android:textSize="@dimen/timestamp" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/activity_padding_horizontal"
+        android:text="Một Trận đấu tuyệt vời"
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnail"
+        android:layout_marginTop="@dimen/activity_padding_horizontal"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/description"
+        android:textSize="@dimen/description" />
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_backdep"
+        android:id="@+id/imgstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginTop="@dimen/padding_10" />
+    <TextView
+        android:layout_below="@+id/imgstatus"
+        android:id="@+id/tvsolike"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:text=" 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+
+        android:layout_below="@+id/tvsolike"
+        android:background="#DDDDDD"
+        android:orientation="vertical"
+        android:id="@+id/llokok"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLike"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_tim"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_below="@+id/llokok"
+        android:text=" Like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

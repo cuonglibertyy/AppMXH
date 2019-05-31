@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BangTinFb</string>
+    <string name="dangnhap">Đăng nhập</string>
+    <string name="bangtin">Bảng tin</string>
+    <string name="banbe">Bạn bè</string>
+    <string name="dangxuat">Đăng xuất</string>
+    <string name="caidat">Cài đặt</string>
+</resources>

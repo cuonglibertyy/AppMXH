@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="20px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_back34"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_weight="3"
+            android:fitsSystemWindows="true"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_avatar"
+                app:civ_border_width="5dp"
+                app:civ_border_color="#FFFFFF"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgcameda"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="@color/chef"
+                app:civ_border_color="#FFFFFF"
+                android:layout_marginLeft="130dp"
+                android:layout_gravity="center|bottom"
+                android:src="@drawable/ic_cameda" />
+
+        </android.support.design.widget.CoordinatorLayout>
+        <LinearLayout
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameWrapper1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint=" Username"
+                    android:padding="10dp"
+                    android:background="@drawable/inputlogin"
+                    android:id="@+id/dkusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/usernameWrapper2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint=" Họ và Tên"
+                    android:padding="10dp"
+                    android:background="@drawable/inputlogin"
+                    android:id="@+id/edhoten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/text_input_password1"
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="false"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint=" Password"
+                    android:padding="10dp"
+                    android:background="@drawable/inputlogin"
+                    android:id="@+id/dkpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/text_input_password2"
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="false"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint="Retype Password"
+                    android:padding="10dp"
+                    android:background="@drawable/inputlogin"
+                    android:id="@+id/nlpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/btndangky"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="false"
+                android:text="Đăng Ký"
+                android:background="@drawable/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <include
+        android:visibility="gone"
+        android:id="@+id/menu_progressbar"
+        layout="@layout/progressbar"
+        >
+    </include>
+</RelativeLayout>
